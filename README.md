@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/NehemiahLimo/Flask_Blog.svg?branch=testing)](https://travis-ci.org/NehemiahLimo/Flask_Blog)
+[![Coverage Status](https://coveralls.io/repos/github/NehemiahLimo/Flask_Blog/badge.svg?branch=testing)](https://coveralls.io/github/NehemiahLimo/Flask_Blog?branch=testing)
 ## Flask Blog
 
 ### Intro
