@@ -1,4 +1,6 @@
+[![Build Status](https://travis-ci.org/NehemiahLimo/Flask_Blog.svg?branch=testing)](https://travis-ci.org/NehemiahLimo/Flask_Blog)
 ## Flask Blog
+
 ### Intro
 This is a simple Blog created with FLASK Microframework
 
