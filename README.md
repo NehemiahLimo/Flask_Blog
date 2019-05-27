@@ -11,9 +11,30 @@ This is a simple Blog created with FLASK Microframework
 3. View Posts
 4. Update Profile
 
+## Setup and installation
+1. Activate virtualenv-Windows
 
-### How to install and run the app
-First you need to clone this repo.
-after cloning, pull your terminal and run this command ` pip install -r requirements.txt`
+   ```bash
+        source venv/Scripts/activate
+   ```
+2. Install dependencies
 
-cd into the repo directory and run the run.py file by executing `python run.py`
+   ```bash
+        pip install -r requirements.txt
+   ```
+
+**NB**
+
+   - You will need to provide email and password in the ` **__init__.py** `
+   ```
+    app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER', 'nehemiahlimo02@gmail.com')
+    app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS', 'Provide you email password here')
+   ```
+
+
+3. Start the server
+   ```
+      python run.py
+   ```
+
+### Author: NehemiahLimo
