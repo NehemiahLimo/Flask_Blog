@@ -12,17 +12,30 @@ This is a simple Blog created with FLASK Microframework
 4. Update Profile
 5. Reset password via email
 
-### Configuration
-Open your `*__init__.py*` file from the project's root directory and configure the following:
-```app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER', 'enter your email')
-app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS', 'Provide you email password here')```
+## Setup and installation
+1. Activate virtualenv-Windows
 
-### How to install and run the app
-First you need to clone this repo.
+   ```bash
+        source venv/Scripts/activate
+   ```
+2. Install dependencies
 
-```sh 
-$ cd Flask_Blog
-$ pip install -r requirements.txt ```
+   ```bash
+        pip install -r requirements.txt
+   ```
 
-### Running the App
-````sh $ python run.py ```
+**NB**
+
+   - You will need to provide email and password in the ` **__init__.py** `
+   ```
+    app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER', 'nehemiahlimo02@gmail.com')
+    app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS', 'Provide you email password here')
+   ```
+
+
+3. Start the server
+   ```
+      python run.py
+   ```
+
+### Author: NehemiahLimo
