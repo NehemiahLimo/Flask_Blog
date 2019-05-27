@@ -12,13 +12,23 @@ This is a simple Blog created with FLASK Microframework
 4. Update Profile
 5. Reset password via email
 
-## Setup and installation
-1. Activate virtualenv-Windows
+## Setup and installation-Windows
+1. Install Virtualenv 
+
+   ```bash
+         pip install virtualenv
+   ```
+create a virtualenv in your cloned repo
+   ```bash
+        virtualenv venv
+   ```
+
+2. Activate virtualenv-Windows
 
    ```bash
         source venv/Scripts/activate
    ```
-2. Install dependencies
+3. Install dependencies
 
    ```bash
         pip install -r requirements.txt
@@ -33,7 +43,7 @@ This is a simple Blog created with FLASK Microframework
    ```
 
 
-3. Start the server
+4. Start the server
    ```
       python run.py
    ```
