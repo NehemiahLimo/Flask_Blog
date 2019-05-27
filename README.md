@@ -18,10 +18,10 @@ This is a simple Blog created with FLASK Microframework
    ```bash
          pip install virtualenv
    ```
-create a virtualenv in your cloned repo
-   ```bash
-        virtualenv venv
-   ```
+   create a virtualenv in your cloned repo
+      ```bash
+         virtualenv venv
+      ```
 
 2. Activate virtualenv-Windows
 
