@@ -8,8 +8,10 @@ This is a simple Blog created with FLASK Microframework
 ### Functionalities
 1. Create Account
 2. Login.
-3. View Posts
+3. View Posts, Edit post, delete post
 4. Update Profile
+5. Reset password via email
+
 
 ## Setup and installation
 1. Activate virtualenv-Windows
