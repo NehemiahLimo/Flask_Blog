@@ -151,7 +151,7 @@ def user_posts(username):
 def send_reset_email(user):
     token= user.get_reset_token()
 
-    msg = Message('Password Reset Request', sender='cheburetnehemiah@gmail.com', 
+    msg = Message('Password Reset Request', sender='noreply@demo.com', 
     recipients=[user.email])
     msg.body = f'''To Reset your password, visit the following link: 
     {url_for('reset_token', token=token, _external = True)} 
@@ -174,7 +174,7 @@ def reset_request():
     return render_template('reset_request.html', title="Reset Password", form=form)
 
 @app.route('/reset_password/<token>', methods=['GET', 'POST'])
-def reset_token():
+def reset_token(token):
     if current_user.is_authenticated:
         return redirect(url_for('home'))
     user = User.verify_reset_token(token)
