@@ -33,13 +33,21 @@ This is a simple Blog created with FLASK Microframework
    ```bash
         pip install -r requirements.txt
    ```
-
+4. Configurations
+Edit the profile and add the following: use `code ~/bash_profile` with VScode 
+   ```bash
+        set 'SECRET_KEY'=os.environ.get('your secret key')
+        set 'SQLITE_DATABASE_URI'=os.environ.get('your db uri')
+        set 'MAIL_USERNAME'=os.environ.get('EMAIL_USER')
+        set 'MAIL_PASSWORD'=os.environ.get('EMAIL_PASS')
+        
+   ```
 **NB**
 
-   - You will need to provide email and password in the ` **__init__.py** `
+   - You will need to set EMAIL_USER and EMAIL_PASS  the os environment variables and provide email and password in the `**__init__.py**`
    ```
-    app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER', 'nehemiahlimo02@gmail.com')
-    app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS', 'Provide you email password here')
+    app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER')
+    app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
    ```
 
 
